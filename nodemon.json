@@ -1,0 +1,5 @@
+{
+  "ext": "ts",
+  "watch": ["src"],
+  "exec": "ts-node -r tsconfig-paths/register src/index.ts"
+}

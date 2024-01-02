@@ -1,0 +1,8 @@
+[2024-01-02T17:17:37.806] [INFO] default - /api/record/list?aaa=111
+[2024-01-02T17:18:10.993] [INFO] default - /api/record/list?aaa=111 query: [Object: null prototype] { aaa: '111' }
+[2024-01-02T17:18:11.028] [INFO] default - /api/record/list?aaa=111 query: [Object: null prototype] { aaa: '111' }
+[2024-01-02T17:18:12.122] [INFO] default - /api/record/list?aaa=111 query: [Object: null prototype] { aaa: '111' }
+[2024-01-02T17:18:42.102] [INFO] default - /api/record/list?aaa=111 query: [Object: null prototype] { aaa: '111' } body: {}
+[2024-01-02T17:21:08.511] [INFO] default - /api/record/list?aaa=111 query: {"aaa":"111"} body: {}
+[2024-01-02T17:21:15.725] [INFO] default - /api/record/list?aaa=111 query: {"aaa":"111"} body: {}
+[2024-01-02T17:21:42.851] [INFO] default - /api/record/list?aaa=111 query: {"aaa":"111"} body: {}

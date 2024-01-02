@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": false,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": [
+        "./src/common/*"
+      ],
+    },
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "./build"
+  ]
+}
