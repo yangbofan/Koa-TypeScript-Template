@@ -27,9 +27,12 @@
 │   └── config.ts       // 项目入口index.js
 │   └── index.ts        // 项目入口index.js
 ├── ecosystem.config.js // pm2配置
+├── env                 // 环境参数配置
+├── .eslintrc.json      // eslint配置
+├── .gitignore          // git文件过滤
 ├── nodemon.json        // nodemon配置
-├── package.json
-└── tsconfig.json
+├── package.json        // package配置
+└── tsconfig.json       // ts配置
 ```
 
 ## 开始
