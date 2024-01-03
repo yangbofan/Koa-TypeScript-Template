@@ -8,8 +8,8 @@
     "koa"
   ],
   "scripts": {
-    "dev": "NODE_ENV=development nodemon",
-    "build": "rm -rf dist && tsc && cp -r src/common/static dist/common/static && echo Build complete!",
+    "dev": "cross-env NODE_ENV=development webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack",
     "deploy": "npx pm2 start ecosystem.config.js --env production",
     "restart": "pm2 restart ecosystem.config.js --env production",
     "stop": "npx pm2 stop ecosystem.config.js",
@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@types/koa-mount": "^4.0.5",
+    "@types/webpack-node-externals": "^3.0.4",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "dotenv": "^8.2.0",
@@ -40,15 +41,20 @@
     "@types/koa-static": "^4.0.4",
     "@types/node": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.56.0",
     "eslint-config-standard-with-typescript": "^43.0.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.4.0",
     "eslint-plugin-promise": "^6.1.1",
-    "nodemon": "^1.19.0",
+    "nodemon-webpack-plugin": "^4.8.2",
     "pm2": "^5.3.0",
-    "ts-node": "^8.1.0",
+    "ts-loader": "^9.5.1",
     "tsconfig-paths": "^3.8.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
   }
 }

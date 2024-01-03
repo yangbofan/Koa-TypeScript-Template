@@ -4,10 +4,10 @@ import activeRecord from './activeRecord'
 
 const AppDataSource = new DataSource({
   type: 'mysql',
-  host: '127.0.0.1',
+  host: 'xxxxxx',
   port: 3306,
   username: 'root',
-  password: 'xxxxxxxx',
+  password: 'xxxxxx',
   database: 'test',
   synchronize: true,
   logging: false,

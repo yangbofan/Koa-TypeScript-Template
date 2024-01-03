@@ -10,3 +10,7 @@ export async function createDirectory (directoryPath: string): Promise<void> {
     console.error('Error creating directory:', error)
   }
 }
+
+export const testAlias = (): void => {
+  console.log(123123)
+}

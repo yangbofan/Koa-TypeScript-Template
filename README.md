@@ -13,26 +13,27 @@
 - **生产环境托管**：基于 `pm2`，实现生产环境的进程管理和自动负载均衡，确保高可用。
 - **开箱即用**：集成了多个开发环境和生产环境常用的脚本命令，可快速部署和管理。
 - **可扩展性**：模板结构适应多种使用场景，便于根据具体需求添加新功能和服务。
+- **Webpack集成**：集成Webpack，配置alisa，提供快速的TS打包编译，优化项目构建流程（ts-node与tsc打包配置可以上main分支查看）。
 
 ## 项目结构
 ```
 .
 ├── src
-│   ├── common          // 通用工具存放了静态文件和工具函数以及interface
+│   ├── common          // 通用工具存放了静态文件和工具函数以及日志文件等
 │   ├── controller      // controller层，写业务相关逻辑
-│   ├── entity          // 数据库相关datasource和实体
+│   ├── entity          // 数据库相关 datasource 和实体
 │   ├── logger          // 日志入口文件和日志文件存放
 │   ├── middleware      // middleware中间价，其中定义了鉴权和打日志的中间价
-│   ├── types           // 自定义types文件
-│   └── config.ts       // 项目入口index.js
-│   └── index.ts        // 项目入口index.js
-├── ecosystem.config.js // pm2配置
+│   ├── types           // 自定义 types 文件
+│   └── config.ts       // 项目入口 index.js
+│   └── index.ts        // 项目入口 index.js
+├── ecosystem.config.js // pm2 配置
 ├── env                 // 环境参数配置
-├── .eslintrc.json      // eslint配置
-├── .gitignore          // git文件过滤
-├── nodemon.json        // nodemon配置
-├── package.json        // package配置
-└── tsconfig.json       // ts配置
+├── .eslintrc.json      // eslint 配置
+├── .gitignore          // git 文件过滤
+├── nodemon.json        // nodemon 配置
+├── package.json        // package 配置
+└── tsconfig.json       // ts 配置
 ```
 
 ## 开始

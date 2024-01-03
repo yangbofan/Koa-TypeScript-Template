@@ -10,7 +10,10 @@ import { DataMapperController } from './controllers/dataMapper'
 import { ActiveRecordController } from './controllers/activeRecord'
 import { PORT, SESSION_CONFIG, appApath, appBpath } from './config'
 import { UseLogWare } from './middleware'
+import { testAlias } from '@common/help'
 import AppDataSource from './entity'
+
+testAlias()
 
 const app: Koa = new Koa()
 
@@ -32,4 +35,4 @@ useKoaServer(app, {
 })
 
 app.listen(PORT)
-console.log(`server启动成功 端口:${PORT}`)
+console.log('Service Started Successfully')

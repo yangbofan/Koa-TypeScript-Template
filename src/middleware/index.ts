@@ -1,6 +1,6 @@
 import { type Context } from 'koa'
 import { Middleware, type KoaMiddlewareInterface } from 'routing-controllers'
-import logger from '../logger'
+import logger from '../common/logger'
 
 /**
  * 用于鉴权的中间价或者使用官方推荐的@Authorized()
