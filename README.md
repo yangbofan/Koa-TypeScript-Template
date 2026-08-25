@@ -1,3 +1,5 @@
+
+
 # Koa-TypeScript-Template
 
 一个为 Node.js 开发者定制的现代化 Koa 框架与 TypeScript 项目模板，专为构建高效、可维护的 API 服务而设计。此项目利用了 TypeScript 的强类型特性，结合 Koa 为开发者提供了高度可扩展的服务端应用架构。它集成了一系列的最佳实践和工具，帮助你快速启动新项目，并专注于业务逻辑的开发。
@@ -82,7 +84,7 @@ npm run restart
 ```bash
 npm run stop
 ```
-该命令会停止 pm2 进程管理器中的所有应用程序实例。
+该命令会停止 pm2 进程管理器中由 ecosystem.config.js 定义的应用程序实例。
 
 
 ## 友情链接
@@ -93,6 +95,3 @@ npm run stop
 
 ## 贡献
 欢迎任何形式的贡献，如果您有建议或要报告 bug，请通过 issue 进行。
-
-
-
